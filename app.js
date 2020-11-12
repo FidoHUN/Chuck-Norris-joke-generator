@@ -28,6 +28,7 @@ function getJokes() {
       } else {
         document.getElementById('error').innerHTML =
           'Something went wrong... :(';
+        document.getElementById('error').classList.add('error');
         setTimeout(function () {
           document.getElementById('error').innerHTML = '';
         }, 3000);
