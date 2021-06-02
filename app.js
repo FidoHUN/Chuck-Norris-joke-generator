@@ -13,7 +13,7 @@ function getJokes() {
     }, 3000);
   } else {
     const result = controller
-      .get(`http://api.icndb.com/jokes/random/${howMany}`)
+      .get(`https://api.icndb.com/jokes/random/${howMany}`)
       .then((data) => data)
       .catch((err) => err);
 
